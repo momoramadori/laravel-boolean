@@ -31,7 +31,11 @@
                     <p>Siamo il primo istituto online in Italia per indice di gradimento e risultati conseguiti.</p>
                 </div>
             </div>
-            
+        </section>
+        <section id="relative-businesses">
+            <div class="container">
+                <p>I nostri studenti sono stati assunti da:</p>
+            </div>
         </section>
     </main>
 @endsection

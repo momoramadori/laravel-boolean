@@ -6444,6 +6444,7 @@ a {
 
 header {
   padding: 20px;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -6601,7 +6602,13 @@ main #info-data .container div h3 {
 }
 main #info-data .container div p {
   font-size: 20px;
-  line-height: 24px;
+  line-height: 28px;
+}
+main #relative-businesses {
+  background-color: white;
+  color: #8a8a8a;
+  font-size: 20px;
+  height: 200px;
 }
 
 footer {

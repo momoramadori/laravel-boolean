@@ -1,5 +1,6 @@
 header {
     padding: $common_padding;
+    background-color: $text_color_two;
     @include my-flex(space-between,center,row);
     height: 100px;
     width: 100%;

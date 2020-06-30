@@ -55,9 +55,16 @@ main {
                 }
                 p {
                     font-size: 20px;
-                    line-height: 24px;
+                    line-height: 28px;
                 }
             }
         }
+    }
+
+    #relative-businesses {
+        background-color: $text_color_two;
+        color: $color_darkgrey;
+        font-size: 20px;
+        height: 200px;
     }
 }
