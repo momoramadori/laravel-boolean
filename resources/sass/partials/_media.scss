@@ -1,0 +1,25 @@
+@media (max-width: 1000px) {
+    header {
+        height: 80px;
+        button, nav {
+            display: none;
+        }
+        .img-wrapper {
+            @include my-flex(center,center,column);
+            width: 100%;
+            text-align: center;
+            img {
+                height: 40px;
+            }
+        }
+        
+        i.fas {
+            align-self: flex;
+            display: inline-block;
+            font-size: 20px;
+            color: rgb(138, 138, 138);
+            align-self: flex-end;
+            line-height: 40px;
+        }
+    }
+} 

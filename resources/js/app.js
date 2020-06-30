@@ -1,3 +1,7 @@
 require('./bootstrap');
 const $ = require('jquery');
-import 'bootstrap';
+
+$('i.fas').click(function(){
+    $('.mobile').toggleClass('active');
+    $('header').toggleClass('disabled');
+})
