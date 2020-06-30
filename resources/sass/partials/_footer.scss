@@ -1,0 +1,47 @@
+footer {
+    color: $text_color_two;
+    padding: $common_padding;
+    padding-top: 80px;
+    margin-top: 100px;
+    background-color: $main_color;
+
+    .footer-top {
+        padding-bottom: $common_padding;
+        border-bottom: 1px solid white;
+        @include my-flex(space-between, center, row);
+        img {
+            width: 200px;
+        }
+        ul {
+            text-align: right;
+            li {
+                list-style-type: none;
+        
+                a {
+                    color: $text_color_two;
+                    text-transform: none;
+                    font-size: 24px;
+        
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        text-align: center;
+        .social {
+            @include my-flex(center,center,row);
+
+            i {
+                font-size: 35px;
+                padding: $common_padding;
+            }
+            i:hover {
+                color: #61ce4e;
+            }
+        }
+    }
+}

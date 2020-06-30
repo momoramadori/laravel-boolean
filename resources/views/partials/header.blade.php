@@ -1,7 +1,6 @@
 <header>
   <div class='img-wrapper'>
     <img src="{{asset('images/logo.png')}}" alt="Boolean logo">
-    
   </div>
   <div>
     <nav>

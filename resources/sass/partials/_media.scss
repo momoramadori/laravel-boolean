@@ -22,4 +22,25 @@
             line-height: 40px;
         }
     }
+    
+    .container {
+        width:100%;
+    }
+
+    footer {
+        padding-top: 40px;
+        .footer-top {
+            @include my-flex(center,center,column-reverse)
+        }
+        & .container>div {
+            text-align: center;
+            padding-top: $common-padding;
+            
+            ul {
+                text-align: center;
+                padding-top: $common-padding;
+            }
+        }
+    }
+    
 } 
