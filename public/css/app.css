@@ -6536,6 +6536,74 @@ header.disabled {
   display: block;
 }
 
+main {
+  padding-top: 120px;
+}
+main .jumbotron {
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+main .jumbotron > div {
+  flex-basis: 50%;
+}
+main .jumbotron > div h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 60px;
+}
+main .jumbotron > div p {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+main .jumbotron > div ul li {
+  text-align: -webkit-match-parent;
+  font-size: 20px;
+}
+main .jumbotron .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+main .jumbotron .wrapper img {
+  margin: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 90%;
+  height: auto;
+}
+main #info-data {
+  background-color: #1c3d59;
+  color: white;
+}
+main #info-data .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+main #info-data .container div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 10px;
+  flex-basis: 280px;
+  max-width: 280px;
+  text-align: center;
+}
+main #info-data .container div h3 {
+  font-size: 45px;
+  padding-bottom: 10px;
+}
+main #info-data .container div p {
+  font-size: 20px;
+  line-height: 24px;
+}
+
 footer {
   color: white;
   padding: 20px;

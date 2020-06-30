@@ -1,0 +1,63 @@
+main {
+    padding-top: 120px;
+    .jumbotron{
+        padding-bottom: 80px;
+        @include my-flex (center,center,row);
+        &>div{
+            flex-basis: 50%;
+    
+            h1 {
+                text-transform: $uppercased;
+                font-weight: 500;
+                font-size: 60px;
+            }
+    
+            p {
+                font-size: 24px;
+                padding-bottom: $common_padding;
+            }
+    
+            ul {
+                li {
+                    text-align: -webkit-match-parent;
+                    font-size: 20px;
+                }
+            }   
+        }
+        .wrapper {
+            @include my-flex(center,center,row);
+            img {
+                margin: auto;
+                object-fit: contain;
+                max-width: 90%;
+                height: auto;
+            }
+        }
+        
+    }
+
+    #info-data {
+        
+        background-color: $main-color;
+        color: white;
+        .container {
+            @include my-flex(space-between,center,row);
+            div {
+               @include my-flex(space-between, center, column); 
+               padding: 40px 10px;
+               flex-basis: 280px;
+               max-width: 280px;
+               text-align: center;
+
+                h3 {
+                    font-size: 45px;
+                    padding-bottom: 10px;
+                }
+                p {
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
