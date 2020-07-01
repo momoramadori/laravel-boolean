@@ -95,3 +95,14 @@
     }
     
 } 
+
+@media (max-width: 1200px) {
+    main#faq-page .faqs-wrapper .box {
+        float: none;
+        width: 100%;
+    }
+
+    .title {
+        text-align: center;
+    }
+}

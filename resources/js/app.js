@@ -7,14 +7,25 @@ $('i.fas.header').click(function(){
 })
 
 $('.risposta').hide();
-$('.faq i.fa-plus').click(function(){
-    $(this).siblings('.risposta').slideDown();
-    $(this).removeClass('active');
-    $(this).next('i').addClass('active');
+$('.faq i').click(function(){
+    $('.risposta:not(this)').siblings('.fa-plus').addClass('active');
+    $('.risposta:visible').slideUp();
+    $(this).siblings('.risposta:hidden').slideDown();
+    if ($(this).hasClass('active')) {
+        $(this).removeClass('active');
+        $(this).siblings('i').addClass('active');
+    }
 })
 
-$('.faq i.fa-minus').click(function(){
-    $(this).siblings('.risposta').slideUp();
-    $(this).removeClass('active');
-    $(this).siblings('i').addClass('active');
-})
+
+//versione responsive ?!?
+// $(window).resize(function(){
+//     if ($(window).width() <= 500) {  
+//         $('.faq i').removeClass('active');
+//         $('.domanda').on('click',function(){
+//             console.log(this);
+            
+//             $(this).siblings('.risposta').slideToggle();
+//         })
+//     }   
+// });

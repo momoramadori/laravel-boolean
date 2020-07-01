@@ -8,7 +8,7 @@
             ],
             [
                 'domanda' => 'Che competenze devo avere per iniziare il corso?',
-                'risposta' => 'Che competenze devo avere per iniziare il corso?' 
+                'risposta' => 'Il corso parte da zero, quindi non serve alcuna competenza di programmazione, è necessario però superare il processo di selezione.' 
             ],
             [
                 'domanda' => 'In cosa consiste il processo di selezione?',
