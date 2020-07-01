@@ -30175,7 +30175,7 @@ $('i.fas.header').click(function () {
 });
 $('.risposta').hide();
 $('.faq i').click(function () {
-  $('.risposta:not(this)').siblings('.fa-plus').addClass('active');
+  $('.risposta').siblings('.fa-plus').addClass('active');
   $('.risposta:visible').slideUp();
   $(this).siblings('.risposta:hidden').slideDown();
 
@@ -30183,12 +30183,17 @@ $('.faq i').click(function () {
     $(this).removeClass('active');
     $(this).siblings('i').addClass('active');
   }
-}); //versione responsive ?!?
+}); //versione responsive 
 
-$('.domanda').on('click', function () {
+$(window).resize(function () {
   if ($(window).width() <= 500) {
     $('.faq i').removeClass('active');
-    $(this).siblings('.risposta').slideToggle();
+  }
+});
+$('.domanda').on('click', function () {
+  if ($(window).width() <= 500) {
+    $('.risposta:visible').slideUp();
+    $(this).siblings('.risposta:hidden').slideDown();
   }
 });
 

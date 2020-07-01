@@ -8,7 +8,7 @@ $('i.fas.header').click(function(){
 
 $('.risposta').hide();
 $('.faq i').click(function(){
-    $('.risposta:not(this)').siblings('.fa-plus').addClass('active');
+    $('.risposta').siblings('.fa-plus').addClass('active');
     $('.risposta:visible').slideUp();
     $(this).siblings('.risposta:hidden').slideDown();
     if ($(this).hasClass('active')) {
@@ -18,13 +18,18 @@ $('.faq i').click(function(){
 })
 
 
-//versione responsive ?!?
-    
+//versione responsive 
+$(window).resize(function() {
+    if ($(window).width() <= 500){
+        $('.faq i').removeClass('active');
+    }
+  });
+ 
+$('.domanda').on('click',function(){
+    if ($(window).width() <= 500) {  
+        $('.risposta:visible').slideUp();
+        $(this).siblings('.risposta:hidden').slideDown();
         
-        $('.domanda').on('click',function(){
-            if ($(window).width() <= 500) {  
-                $('.faq i').removeClass('active');
-                $(this).siblings('.risposta').slideToggle();
-            }      
-        })
+    }      
+})
 
