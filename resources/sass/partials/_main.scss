@@ -138,7 +138,7 @@ main {
                 clear: both;
             }
             .box {
-                min-height: 765px;
+                min-height: 805px;
                 width: 50%;
                 float: left;
                 &.prima-corso {
@@ -154,7 +154,7 @@ main {
                    @extend %spaces;
                    h3 {
                         font-size: $important_text;
-                        padding: 30px 0;
+                        padding: 50px 0;
                    }
                    .faq {
                        padding: $common_padding 0;
