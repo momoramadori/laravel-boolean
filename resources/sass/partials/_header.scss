@@ -10,6 +10,7 @@
 }
 
 header {
+    z-index: 10;
     padding: $common_padding;
     background-color: $text_color_two;
     @include my-flex(space-between,center,row);

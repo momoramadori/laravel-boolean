@@ -19,13 +19,12 @@ $('.faq i').click(function(){
 
 
 //versione responsive ?!?
-// $(window).resize(function(){
-//     if ($(window).width() <= 500) {  
-//         $('.faq i').removeClass('active');
-//         $('.domanda').on('click',function(){
-//             console.log(this);
-            
-//             $(this).siblings('.risposta').slideToggle();
-//         })
-//     }   
-// });
+    
+        
+        $('.domanda').on('click',function(){
+            if ($(window).width() <= 500) {  
+                $('.faq i').removeClass('active');
+                $(this).siblings('.risposta').slideToggle();
+            }      
+        })
+
