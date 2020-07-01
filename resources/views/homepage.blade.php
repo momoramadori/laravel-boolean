@@ -35,6 +35,16 @@
         <section id="relative-businesses">
             <div class="container">
                 <p>I nostri studenti sono stati assunti da:</p>
+                <div class="logos-wrapper start clearfix">
+                    <div><img src="{{asset('images/facileit.png')}}" alt=""></div>
+                    <div><img src="{{asset('images/oneday.png')}}" alt=""></div>
+                    <div><img src="{{asset('images/prima.png')}}" alt=""></div>
+                </div>
+                <div class="logos-wrapper end clearfix"> 
+                    <div><img src="{{asset('images/fabbrica-digitale-big.png')}}" alt=""></div>
+                    <div><img src="{{asset('images/nephila.png')}}" alt=""></div>
+                    <div><img src="{{asset('images/rds.png')}}" alt=""></div>
+                </div>
             </div>
         </section>
     </main>

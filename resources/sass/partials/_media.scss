@@ -27,6 +27,57 @@
         width:100%;
     }
 
+    main {
+        .jumbotron {
+            flex-direction: column;
+            &>div {
+                padding: 0 20px;
+
+                h1 {
+                    font-size: 40px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+
+                li {
+                    font-size: 14px;
+                } 
+            }
+            .wrapper img {
+                max-width: 80%;
+                padding-top: 20px;
+            }
+        }
+
+        #info-data {
+            .container {
+                flex-direction: column;
+                div {
+                    flex-basis: 80%;
+                    max-width: 80%;
+                }
+            }
+        }
+
+        #relative-businesses {
+            padding: 30px 0;
+            .logos-wrapper {
+                @include my-flex(center,center,row);
+                div {
+                    flex-basis: 33%;
+                    max-width: 33%;
+                    margin: auto;
+
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }    
+        }
+    }
+
     footer {
         padding-top: 40px;
         .footer-top {

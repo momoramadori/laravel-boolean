@@ -1,3 +1,14 @@
+%properties-after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform:translate(-50%,-50%) ;
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+}
+
 header {
     padding: $common_padding;
     background-color: $text_color_two;
@@ -23,20 +34,19 @@ header {
                     padding: $common_padding;
                     color: $main_color;
                     position: relative;
-        
+                    
                     &:after {
-                        content: '';
-                        position: absolute;
-                        bottom: 0;
-                        left: 50%;
-                        transform:translate(-50%,-50%) ;
-                        width: 100%;
-                        height: 2px;
+                        @extend %properties-after;
                         background-color: $details_color;
-                        opacity: 0;
                     }
         
                     &:hover {
+                        &:after {
+                            opacity: 1;
+                        }
+                    }
+
+                    &.active {
                         &:after {
                             opacity: 1;
                         }
@@ -86,12 +96,27 @@ header {
     ul {
         padding-top: 150px;
         height: 100%;
+
         li {
             padding: 20px 20px;
+
             a {
                 color: $text_color_two;
                 font-size: 35px;
-                padding: 40px 20px;
+                padding: 10px 10px;
+                margin: 30px 10px;
+                position: relative;
+
+                &:after {
+                    @extend %properties-after;
+                    background-color: $text_color_two;
+                }
+
+                &.active {
+                    &:after {
+                        opacity: 1;
+                    }
+                }
             }
         }
         
