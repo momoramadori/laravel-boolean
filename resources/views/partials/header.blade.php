@@ -1,6 +1,8 @@
 <header>
   <div class='img-wrapper'>
-    <img src="{{asset('images/logo.png')}}" alt="Boolean logo">
+    <a href="{{route('homepage')}}">
+      <img src="{{asset('images/logo.png')}}" alt="Boolean logo">
+    </a>
   </div>
   <div>
     <nav>
