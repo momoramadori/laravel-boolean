@@ -1,10 +1,22 @@
 main {
     /* ---- JUMBOTRON ---- */
 
+    %clearfix_set {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    %spaces {
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 60px;
+    }
+
     padding-top: 120px;
     .jumbotron{
-        padding-bottom: 80px;
         @include my-flex (center,center,row);
+        padding-bottom: 80px;
         &>div{
             flex-basis: 50%;
             h1 {
@@ -74,18 +86,14 @@ main {
         .container {
             padding: 0 $common_padding;
             &.clearfix::after {
-                content: "";
-                clear: both;
-                display: table;
+                @extend %clearfix_set;
             }
         }
 
         .logos-wrapper {
 
             &.clearfix::after {
-                content: "";
-                clear: both;
-                display: table;
+                @extend %clearfix_set;
               }
             img {
                 max-width: 250px;
@@ -112,11 +120,6 @@ main {
 
     &#faq-page {
 
-        %spaces {
-            padding-left: 60px;
-            padding-right: 60px;
-            padding-bottom: 60px;
-        }
         .title {
             @extend %spaces;
         }
@@ -133,12 +136,10 @@ main {
 
         .faqs-wrapper {
             &.clearfix::after {
-                content: '';
-                display: table;
-                clear: both;
+                @extend %clearfix_set;
             }
             .box {
-                min-height: 805px;
+                min-height: 830px;
                 width: 50%;
                 float: left;
                 &.prima-corso {

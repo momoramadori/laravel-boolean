@@ -6566,12 +6566,22 @@ main {
   /* ----- SECTION 3 : PARTNERS ----- */
   /* ----- PAGE: FAQS ----- */
 }
+main#faq-page .faqs-wrapper.clearfix::after, main #relative-businesses .logos-wrapper.clearfix::after, main #relative-businesses .container.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+main#faq-page .faqs-wrapper .box .content, main#faq-page .title {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 60px;
+}
 main .jumbotron {
-  padding-bottom: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  padding-bottom: 80px;
 }
 main .jumbotron > div {
   flex-basis: 50%;
@@ -6640,16 +6650,6 @@ main #relative-businesses {
 main #relative-businesses .container {
   padding: 0 20px;
 }
-main #relative-businesses .container.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-main #relative-businesses .logos-wrapper.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 main #relative-businesses .logos-wrapper img {
   max-width: 250px;
 }
@@ -6663,11 +6663,6 @@ main #relative-businesses .logos-wrapper.end div {
   width: 30%;
   padding: 20px;
 }
-main#faq-page .faqs-wrapper .box .content, main#faq-page .title {
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 60px;
-}
 main#faq-page h1 {
   font-weight: 500;
   font-size: 40px;
@@ -6675,13 +6670,8 @@ main#faq-page h1 {
 main#faq-page p {
   font-size: 20px;
 }
-main#faq-page .faqs-wrapper.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
 main#faq-page .faqs-wrapper .box {
-  min-height: 805px;
+  min-height: 830px;
   width: 50%;
   float: left;
 }

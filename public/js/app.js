@@ -30167,7 +30167,8 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"); //mobile/desktop versions of header switching
+
 
 $('i.fas.header').click(function () {
   $('.mobile').toggleClass('active');
@@ -30175,15 +30176,18 @@ $('i.fas.header').click(function () {
 });
 $('.risposta').hide();
 $('.faq i').click(function () {
-  $('.risposta').siblings('.fa-plus').addClass('active');
-  $('.risposta:visible').slideUp();
-  $(this).siblings('.risposta:hidden').slideDown();
+  //when we click the icons all the + icons appear
+  $('.risposta').siblings('.fa-plus').addClass('active'); //only visible answers disappear
+
+  $('.risposta:visible').slideUp(); //  hidden answer, if clicked, appears
+
+  $(this).siblings('.risposta:hidden').slideDown(); // to change the icons between themselves
 
   if ($(this).hasClass('active')) {
     $(this).removeClass('active');
     $(this).siblings('i').addClass('active');
   }
-}); //versione responsive 
+}); //responsive version, without icons 
 
 $(window).resize(function () {
   if ($(window).width() <= 500) {
