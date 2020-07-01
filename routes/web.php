@@ -18,5 +18,7 @@ Route::get('/', function () {
 })-> name('homepage');
 
 Route::get('/faq', function () {
-    return view('faq');
+    $faqs_prima = config('faq.lista_faq_prima');
+    $faqs_dopo = config('faq.lista_faq_dopo');
+    return view('faq')->with(['faqs_prima'=> $faqs_prima,'faqs_dopo' => $faqs_dopo]);
 })-> name('faq');

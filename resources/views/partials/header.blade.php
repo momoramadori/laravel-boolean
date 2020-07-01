@@ -17,7 +17,7 @@
   </div>
 </header>
 <nav class='mobile'>
-  <i class="fas fa-times"></i>
+  <i class="fas fa-times header"></i>
   <ul>
     <li><a class='{{Request::route()->getName()=='homepage' ? 'active' : ''}}' href="#">Home</a></li>
     <li><a class='{{Request::route()->getName()=='corso' ? 'active' : ''}}' href="#">Corso</a></li>

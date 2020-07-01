@@ -104,4 +104,78 @@ main {
              }
         }
     }
+
+    &#faq-page {
+
+        %spaces {
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-bottom: 60px;
+        }
+        .title {
+            @extend %spaces;
+        }
+
+
+        h1 {
+            font-weight: 500;
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .faqs-wrapper {
+            &.clearfix::after {
+                content: '';
+                display: table;
+                clear: both;
+            }
+            .box {
+                width: 50%;
+                float: left;
+                &.prima-corso {
+                    color: $main_color;
+                    background-color: $section_light_color;
+                    height: 100%;
+                }
+                &.dopo-corso {
+                    color: $text_color_two;
+                    background-color: $main-color;
+                }
+
+                .content {
+                   @extend %spaces;
+                   padding-top: $common_padding;
+                   h3 {
+                        font-size: 35px;
+                   }
+                   .faq {
+                       padding: 20px 0;
+                       position: relative;
+                       h4 {
+                           font-size: 26px;
+                           padding-bottom: 5px;
+                       }
+                       p {
+                            font-size: 18px;
+                       }
+
+                       i {
+                           position: absolute;
+                           top: 26px;
+                           right: 0;
+                           display: none;
+                       }
+                       
+
+                       i.active {
+                           display: inline;
+                       }
+                   }
+                }
+            }
+        }
+    }
 }

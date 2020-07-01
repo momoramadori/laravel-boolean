@@ -6442,6 +6442,10 @@ a {
   margin: auto;
 }
 
+.container-fluid {
+  width: 100%;
+}
+
 .mobile ul li a:after, header div nav li a:after {
   content: "";
   position: absolute;
@@ -6650,6 +6654,62 @@ main #relative-businesses .logos-wrapper.end div {
   float: right;
   width: 30%;
   padding: 20px;
+}
+main#faq-page .faqs-wrapper .box .content, main#faq-page .title {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 60px;
+}
+main#faq-page h1 {
+  font-weight: 500;
+  font-size: 40px;
+}
+main#faq-page p {
+  font-size: 20px;
+}
+main#faq-page .faqs-wrapper.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+main#faq-page .faqs-wrapper .box {
+  width: 50%;
+  float: left;
+}
+main#faq-page .faqs-wrapper .box.prima-corso {
+  color: #1c3d59;
+  background-color: #e8ebf1;
+  height: 100%;
+}
+main#faq-page .faqs-wrapper .box.dopo-corso {
+  color: white;
+  background-color: #1c3d59;
+}
+main#faq-page .faqs-wrapper .box .content {
+  padding-top: 20px;
+}
+main#faq-page .faqs-wrapper .box .content h3 {
+  font-size: 35px;
+}
+main#faq-page .faqs-wrapper .box .content .faq {
+  padding: 20px 0;
+  position: relative;
+}
+main#faq-page .faqs-wrapper .box .content .faq h4 {
+  font-size: 26px;
+  padding-bottom: 5px;
+}
+main#faq-page .faqs-wrapper .box .content .faq p {
+  font-size: 18px;
+}
+main#faq-page .faqs-wrapper .box .content .faq i {
+  position: absolute;
+  top: 26px;
+  right: 0;
+  display: none;
+}
+main#faq-page .faqs-wrapper .box .content .faq i.active {
+  display: inline;
 }
 
 footer {
